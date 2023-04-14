@@ -1,0 +1,20 @@
+package lab1;
+
+import java.util.Scanner;
+public class SomaColecoes {
+	public static void main(String[] args){
+		int acm = 0;
+		int num[] = new int[2];
+		Scanner entrada = new Scanner(System.in);
+		
+		
+		for(int i=0;i<num.length; i++){
+		    System.out.printf("");
+			num[i]=entrada.nextInt();
+	        acm = acm + num[i];
+		    
+		}
+	    System.out.println(acm);
+	}
+}	
+	

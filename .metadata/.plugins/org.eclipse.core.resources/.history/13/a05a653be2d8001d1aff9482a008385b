@@ -1,0 +1,11 @@
+
+public class ComputadorMain {
+	public static void  main(String[] arg) {
+	 	Processador proc1 = new Processador();
+	 	proc1.marca ="Intel";
+	 	proc1.modelo ="i7";
+	 	proc1.velocidade = 3.2;
+	 	proc1.numNucleos = 8;
+	 	Processador();
+	}
+}

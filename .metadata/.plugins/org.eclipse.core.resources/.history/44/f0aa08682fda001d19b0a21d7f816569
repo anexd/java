@@ -1,0 +1,13 @@
+package br.edu.icomp.ufam.lab_heranca;
+
+public class Circulo extends FormaGeometrica{
+	
+	public int raio;
+	
+	public Circulo(int posX, int posY) {
+		super(posX, posY);
+		// TODO Auto-generated constructor stub
+		this.raio = raio;
+	}
+	
+}

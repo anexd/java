@@ -1,0 +1,25 @@
+
+public class Processador {
+	String marca;
+	String modelo;
+	Double velocidade;
+	int numNucleos;
+
+	public  Processador(String marca,String modelo,Double velocidade, int numNucleos) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.velocidade = velocidade;
+		this.numNucleos = numNucleos;
+	}
+	public Processador(){}
+	Double getVelocidadeParalel(Double velocidade, int numNucleos) {
+		return velocidade*numNucleos;
+	}
+	//String getDescicao(){
+		//return ;
+	//}
+	
+	
+	
+	
+}

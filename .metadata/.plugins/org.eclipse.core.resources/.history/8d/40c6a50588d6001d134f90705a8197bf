@@ -1,0 +1,27 @@
+package lab1;
+
+import java.util.Scanner;
+public class AsciiArt {
+   
+    public static void main(String[] args) {
+        int i = 1;
+	    int j;
+	    int linha;
+	    int coluna = 9;
+	    Scanner scan = new Scanner(System.in);
+        System.out.print("");
+        linha = scan.nextInt();
+        while(i<=linha){
+            j=1;
+            while(j<=coluna){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println(""); 
+            i = i +1;
+             
+        }
+              // System.out.print(" ");  // imprime espaços
+                
+    }         
+} 

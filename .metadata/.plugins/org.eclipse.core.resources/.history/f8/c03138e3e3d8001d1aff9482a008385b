@@ -1,0 +1,32 @@
+public class Processador {
+	String marca;
+	String modelo;
+	Double velocidade;
+	int numNucleos;
+
+	/*public  Processador(String marca,String modelo,Double velocidade, int numNucleos) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.velocidade = velocidade;
+		this.numNucleos = numNucleos;
+	}*/
+	void getDescricao(){
+		System.out.printf("Processador: marca=%s,modelo=%s, velocidade=|%8.4fGHz, numNucleos=%d, velocidadeParalela=%8.4f6GHz",this.marca,this.modelo);
+		 
+	}
+	Double getVelocidadeParalel(Double velocidade, int numNucleos) {
+		return velocidade*numNucleos;
+	}
+	public static void  main(String[] arg) {
+	 	Processador proc1= new Processador();
+	 	proc1.marca ="Intel";
+	 	proc1.modelo ="i7";
+	 	proc1.velocidade = 3.2;
+	 	proc1.numNucleos = 8;
+	 	
+	}
+	
+	
+	
+	
+}

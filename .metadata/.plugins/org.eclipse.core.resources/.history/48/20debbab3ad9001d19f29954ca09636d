@@ -1,0 +1,27 @@
+public class Processador {
+	String marca;
+	String modelo;
+	Double velocidade;
+	int numNucleos;
+	public  Processador(String marca,String modelo,Double velocidade, int numNucleos) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.velocidade = velocidade;
+		this.numNucleos = numNucleos;
+	}
+	public  Processador() {}
+	String getDescricao(){
+		
+		return "Processador: marca="+this.marca+", modelo ="+this.modelo+", velocidade="+this.velocidade
+				+", Numnucleo=" +this.numNucleos+", velocidadeParalela= "+this.getVelocidadeParalel(velocidade, numNucleos)+"GHz";
+				
+	}
+	Double getVelocidadeParalel(Double velocidade, int numNucleos) {
+		return velocidade*numNucleos;
+	}
+	public static void  main(String[] arg) {
+		Processador proc1= new Processador("Intel","i7",3.2,8);
+		System.out.println(proc1.getDescricao());
+	}
+	
+}

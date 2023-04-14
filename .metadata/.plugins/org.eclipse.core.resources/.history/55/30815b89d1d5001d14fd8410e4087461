@@ -1,0 +1,24 @@
+package lab1;
+
+import java.util.Scanner;
+public class SomaColecoes {
+	public static void main(String[] args){
+		int numero [4] ;
+		int i;
+		int acm = 0;
+		
+	
+		do{ 
+			for(i=0;i>=numero.length;i++){
+				Scanner scan = new Scanner(System.in);
+				System.out.print("");
+				i= scan.nextInt();
+				
+				acm += i;}
+			
+			
+		} while(numero[i]!=numero[-1]);
+		
+		System.out.println(acm);
+	}
+}

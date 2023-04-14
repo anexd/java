@@ -1,0 +1,8 @@
+
+public class ComputadorMain {
+	public static void  main(String[] arg) {
+		Processador proc1= new Processador("Intel","i7",3.2,8);
+		System.out.println(proc1.getDescricao());
+		
+	}
+}

@@ -1,0 +1,17 @@
+package br.edu.icomp.ufam.lab_heranca;
+
+public abstract class FormaGeometrica{
+	int posX;
+	int posY;
+	
+	public FormaGeometrica (int posX, int posY ){
+		this.posX = posX;
+		this.posY = posY;
+	}
+	abstract  double getArea();
+	abstract  double getPerimetro();
+	
+	public   String getPosString() {
+		return "(posição ("+ this.posX+","+this.posY+")";
+	}
+}
